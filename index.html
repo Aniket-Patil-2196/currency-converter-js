@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-<script src="/app.js"></script>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="amount">
+            <input type="text" id="amount" placeholder="Enter Amount">
+        </div>
+        <div class="dropdown-cont">
+            <div class="from">
+                <p>From</p>
+                <div class="cont-img">
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                </div>
+                <div class="dropdown">
+                    <select name="Country" id="countary">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="to">
+                <p>To</p>
+                <div class="cont-img">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                </div>
+                <div class="dropdown">
+                    <select name="Country" id="countary">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <p>1 Nat = --- Nat</p>
+        <button id="btn">Convert</button>
+    </div>
+    <script src="/app.js"></script>
 </body>
+
 </html>
